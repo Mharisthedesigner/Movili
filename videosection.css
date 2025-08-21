@@ -1,0 +1,265 @@
+/*---------------------Fonts-----------------*/
+@font-face {
+    font-family: 'Rawest';
+    src: url('Font/Rawest.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MilligramMarco';
+    src: url('Font/Milligram.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*---------------------Fonts-----------------*/
+
+/*---------------------Roots-----------------*/
+
+:root {
+    ---yellow: #F8F5F0;
+    ---white: #ffffff;
+    ---Background: #0b0b0b;
+    ---black: #1E1E1E;
+    ---border: #e5e5e5;
+}
+
+/*---------------------Roots-----------------*/
+
+.videosection1 {
+    background-image: url(img/video\ section\ paper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.videosection1 .heading h1 {
+    font-size: 40px;
+    color: var(---black);
+    font-family: 'MilligramMarco', sans-serif;
+}
+
+.videosection1 .heading p {
+    font-size: 25px;
+    color: var(---black);
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.videosection1 .container {
+    background-color: var(---black);
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.856);
+    margin-top: 50px;
+}
+
+.videosection1 .container video {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.videosection1 #videoheading {
+    color: var(---black);
+    font-size: 75px;
+    font-family: 'MilligramMarco', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 30px;
+}
+
+
+
+
+
+
+
+
+/* media quries */
+
+@media (max-width:1772px) {
+    section {
+        padding: 20px 100px;
+    }
+}
+
+@media (max-width:1674px) {
+    section {
+        padding: 20px 80px;
+    }
+
+}
+
+@media (max-width:1590px) {
+    section {
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width:1486px) {
+    section {
+        margin-top: 120px;
+    }
+
+    .videosection1 .container video {
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width:1390px) {
+    section {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width:1280px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+
+    .videosection1 #videoheading {
+        font-size: 75px;
+        letter-spacing: 18px;
+    }
+}
+
+@media (max-width:1080px) {
+    section {
+        padding: 20px 15px;
+        margin-top: 70px;
+    }
+
+    .videosection1 #videoheading {
+        font-size: 55px;
+        letter-spacing: 18px;
+    }
+
+}
+
+@media (max-width:930px) {
+    .videosection1 {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:855px) {
+    .videosection1 #videoheading {
+        font-size: 45px;
+        letter-spacing: 15px;
+    }
+
+}
+
+@media (max-width:780px) {
+    section {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:690px) {
+    .videosection1 #videoheading {
+        font-size: 35px;
+        letter-spacing: 7px;
+        margin-top: 25px;
+    }
+
+    .videosection1 .container {
+        background-color: var(---black);
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.856);
+        margin-top: 30px;
+    }
+
+    .videosection1 .heading h1 {
+        font-size: 25px;
+        color: var(---black);
+        font-family: 'MilligramMarco', sans-serif;
+    }
+
+    .videosection1 .heading p {
+        font-size: 20px;
+        color: var(---black);
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .videosection1 {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width:550px) {
+    section {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:500px) {}
+
+@media (max-width:450px) {
+    .videosection1 #videoheading {
+        font-size: 25px;
+        letter-spacing: 5px;
+        margin-top: 15px;
+    }
+
+    .videosection1 .container {
+        background-color: var(---black);
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.856);
+        margin-top: 20px;
+    }
+
+    .videosection1 .heading h1 {
+        font-size: 20px;
+    }
+
+    .videosection1 .heading p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .videosection1 .container video {
+        padding: 10px 10px;
+    }
+
+    .videosection1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:400px) {
+    .videosection1 #videoheading {
+        font-size: 20px;
+        letter-spacing: 5px;
+        margin-top: 15px;
+    }
+
+    .videosection1 .container {
+        background-color: var(---black);
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.856);
+        margin-top: 20px;
+    }
+
+    .videosection1 .heading h1 {
+        font-size: 14px;
+    }
+
+    .videosection1 .heading p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+/* media quries */

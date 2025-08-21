@@ -1,0 +1,652 @@
+/*---------------------Fonts-----------------*/
+@font-face {
+    font-family: 'Rawest';
+    src: url('Font/Rawest.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MilligramMarco';
+    src: url('Font/Milligram.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*---------------------Fonts-----------------*/
+
+/*---------------------Roots-----------------*/
+
+:root {
+    ---yellow: #F8F5F0;
+    ---white: #ffffff;
+    ---Background: #0b0b0b;
+    ---black: #1E1E1E;
+    ---border: #e5e5e5;
+}
+
+/*---------------------Roots-----------------*/
+
+
+.about2 {
+    background-image: url(img/Background\ blsck.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.about2 .heading h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: var(---yellow);
+    font-family: 'MilligramMarco', sans-serif;
+    line-height: 100px;
+    margin: 30px 0px;
+}
+
+.about2 .heading h2 {
+    font-size: 55px;
+    color: var(---yellow);
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 5px;
+}
+
+.about2 .heading p {
+    font-size: 20px;
+    color: var(---yellow);
+    line-height: 30px;
+}
+
+.about2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.about2 .container .image {
+    position: relative;
+}
+
+.about2 .container .image #shadowwhite {
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    right: -30%;
+    width: 100%;
+}
+
+.about2 .container .image #about2bigimage {
+    z-index: 5;
+}
+
+.about2 .container .image .text .half-color2 {
+    font-size: 130px;
+    font-family: 'MilligramMarco', sans-serif;
+    font-weight: 800;
+    color: var(---black);
+    line-height: 110px;
+    /* Create two layers: top half one color, bottom half another */
+    background: linear-gradient(to left, #eae6e1 83%, #1E1E1E 22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about2 .container .image .text {
+    position: absolute;
+    right: -82%;
+    top: 15%;
+}
+
+.about2 .container .image .text h2 {
+    font-size: 45px;
+    font-family: 'MilligramMarco', sans-serif;
+    font-weight: 400;
+    color: var(---yellow);
+    padding-left: 170px;
+    padding-top: 20px;
+}
+
+.about2 .container .text2 {
+    position: absolute;
+    left: 45%;
+    bottom: 10%;
+}
+
+.about2 .container .text2 h1 {
+    color: var(---yellow);
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.about2 .container .text2 h5 {
+    color: var(---yellow);
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+.about2 .container .text2 p {
+    color: var(---yellow);
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quries */
+
+@media (max-width:1772px) {
+    section {
+        padding: 20px 100px;
+    }
+}
+
+@media (max-width:1674px) {
+    section {
+        padding: 20px 80px;
+    }
+
+}
+
+@media (max-width:1590px) {
+    section {
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width:1486px) {
+    section {
+        margin-top: 120px;
+    }
+
+    .about2 .container .text2 {
+        position: absolute;
+        left: 50%;
+        bottom: 11%;
+    }
+
+    .about2 .container .text2 p {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .about2 .container .image .text .half-color2 {
+        font-size: 100px;
+        line-height: 110px;
+    }
+
+    .about2 .container .image .text {
+        right: -62%;
+        top: 15%;
+
+    }
+}
+
+@media (max-width:1390px) {
+    section {
+        padding: 20px 40px;
+    }
+
+    .about2 .container .text2 h1 {
+        font-size: 53px;
+    }
+
+    .about2 .container .text2 h5 {
+        color: var(---yellow);
+        font-size: 30px;
+        font-weight: 700;
+        margin: 20px 0px;
+    }
+
+    .about2 .container .text2 {
+        position: absolute;
+        left: 55%;
+        bottom: 12%;
+    }
+}
+
+@media (max-width:1280px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+
+    .about2 .container .image .text .half-color2 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .about2 .container .image .text h2 {
+        font-size: 40px;
+        padding-left: 130px;
+        padding-top: 50px;
+    }
+
+    .about2 .container .image .text {
+        right: -50%;
+        top: 15%;
+
+    }
+
+}
+
+@media (max-width:1080px) {
+    section {
+        padding: 20px 15px;
+        margin-top: 70px;
+    }
+
+    .about2 .container .image #about2bigimage {
+        width: 80%;
+    }
+
+    .about2 .container .image .text {
+        right: -23%;
+        top: 15%;
+
+    }
+
+    .about2 .container .image .text .half-color2 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .about2 .container .image .text h2 {
+        font-size: 30px;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    .about2 .container .text2 {
+        position: absolute;
+        left: 54%;
+        bottom: 11%;
+    }
+
+    .about2 .container .text2 h1 {
+        font-size: 40px;
+    }
+
+    .about2 .container .text2 h5 {
+        color: var(---yellow);
+        font-size: 25px;
+        font-weight: 700;
+        margin: 20px 0px;
+    }
+
+    .about2 .container .text2 p {
+        font-size: 18px;
+    }
+
+    .about2 .container .image #shadowwhite {
+        right: -10%;
+    }
+
+
+}
+
+@media (max-width:930px) {
+    .about2 .container .image #about2bigimage {
+        width: 59%;
+    }
+
+    .about2 .container .image .text {
+        right: -5%;
+        top: 10%;
+
+    }
+
+    .about2 .container .image .text h2 {
+        font-size: 20px;
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+
+    .about2 .container .text2 {
+        position: absolute;
+        left: 45%;
+        bottom: 8%;
+    }
+
+    .about2 .container .image #shadowwhite {
+        right: 20%;
+    }
+
+    .about2 .heading h1 {
+        font-size: 70px;
+        line-height: 70px;
+        margin: 30px 0px;
+    }
+
+    .about2 .heading h2 {
+        font-size: 45px;
+        color: var(---yellow);
+        font-weight: 400;
+        text-transform: lowercase;
+        letter-spacing: 5px;
+    }
+
+    .about2 {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:850px) {
+    .about2 .container .image #about2bigimage {
+        width: 60%;
+    }
+
+    .about2 .container .image .text {
+        right: 5%;
+        top: 10%;
+
+    }
+
+    .about2 .container .image .text .half-color2 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+
+    .about2 .container .image .text h2 {
+        font-size: 22px;
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+
+    .about2 .container .text2 {
+        position: absolute;
+        left: 50%;
+        bottom: 11%;
+    }
+
+    .about2 .container .text2 h1 {
+        font-size: 30px;
+    }
+
+    .about2 .container .text2 h5 {
+        color: var(---yellow);
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px 0px;
+    }
+
+    .about2 .container .text2 p {
+        font-size: 16px;
+    }
+
+    .about2 .container .image #shadowwhite {
+        right: 20%;
+    }
+}
+
+
+@media (max-width:780px) {
+    section {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:690px) {
+    .about2 .container {
+        display: block;
+    }
+
+    .about2 .container .image #about2bigimage {
+        width: 65%;
+    }
+
+    .about2 .container .image .text .half-color2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .about2 .container .image .text h2 {
+        font-size: 18px;
+        padding-left: 70px;
+        padding-top: 20px;
+    }
+
+    .about2 .container .image .text {
+        right: 5%;
+        top: 10%;
+    }
+
+    .about2 .container .text2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about2 {
+        padding-bottom: 300px;
+    }
+
+    .about2 .container .text2 h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .about2 .container .text2 h5 {
+        color: var(---yellow);
+        font-size: 25px;
+        font-weight: 700;
+        margin: 20px 0px;
+        letter-spacing: 10px;
+        line-height: 40px;
+    }
+
+    .about2 .container .text2 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .about2 {
+        padding-top: 70px;
+    }
+
+    .about2 .container {
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width:550px) {
+    section {
+        margin-top: 30px;
+    }
+
+    .about2 .container .text2 h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .about2 .container .text2 h5 {
+        color: var(---yellow);
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px 0px;
+        letter-spacing: 10px;
+        line-height: 40px;
+    }
+
+    .about2 .container .text2 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .about2 .container .image #about2bigimage {
+        width: 55%;
+    }
+}
+
+@media (max-width:500px) {}
+
+@media (max-width:450px) {
+    .about2 .heading h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin: 20px 0px;
+    }
+
+    .about2 .heading h2 {
+        font-size: 30px;
+        color: var(---yellow);
+        font-weight: 400;
+        text-transform: lowercase;
+        letter-spacing: 5px;
+    }
+
+    .about2 .heading p {
+        font-size: 14px;
+        color: var(---yellow);
+        line-height: 30px;
+    }
+
+    .about2 .container .image #about2bigimage {
+        width: 60%;
+    }
+
+    .about2 .container .image .text .half-color2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .about2 .container .image .text h2 {
+        font-size: 18px;
+        padding-left: 70px;
+        padding-top: 20px;
+    }
+
+    .about2 .container .image .text {
+        right: 5%;
+        top: 50%;
+    }
+
+    .about2 .container .text2 h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .about2 .container .text2 h5 {
+        color: var(---yellow);
+        font-size: 16px;
+        font-weight: 700;
+        margin: 20px 0px;
+        letter-spacing: 8px;
+        line-height: 30px;
+    }
+
+    .about2 .container .text2 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .about2 {
+        padding-top: 50px;
+        padding-bottom: 320px;
+    }
+
+    .about2 .container {
+        margin-top: 10px;
+    }
+
+    .about2 .container .image #shadowwhite {
+        right: 0%;
+    }
+        .about2 .container .text2 {
+        bottom: 5%;
+    }
+
+}
+
+@media (max-width:415px) {
+    .about2 .heading h1 {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 10px 0px;
+    }
+
+    .about2 .heading h2 {
+        font-size: 20px;
+        color: var(---yellow);
+        font-weight: 400;
+        text-transform: lowercase;
+        letter-spacing: 5px;
+    }
+
+    .about2 .heading p {
+        font-size: 12px;
+        color: var(---yellow);
+        line-height: 25px;
+    }
+
+    .about2 .container .image .text {
+        right: 0%;
+        top: 60%;
+    }
+
+    .about2 .container .image .text .half-color2 {
+        font-size: 35px;
+        line-height: 30px;
+    }
+
+    .about2 .container .image .text h2 {
+        font-size: 16px;
+        padding-left: 70px;
+    }
+
+    .about2 .container .image #about2bigimage {
+        width: 70%;
+    }
+
+    .about2 .container .text2 h1 {
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+
+    .about2 .container .text2 h5 {
+        color: var(---yellow);
+        font-size: 12px;
+        font-weight: 700;
+        margin: 10px 0px;
+        letter-spacing: 7px;
+        line-height: 20px;
+    }
+
+    .about2 .container .text2 p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+
+}
+
+/* media quries */

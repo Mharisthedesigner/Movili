@@ -1,0 +1,388 @@
+/*---------------------Fonts-----------------*/
+@font-face {
+    font-family: 'Rawest';
+    src: url('Font/Rawest.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MilligramMarco';
+    src: url('Font/Milligram.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*---------------------Fonts-----------------*/
+
+/*---------------------Roots-----------------*/
+
+:root {
+    ---yellow: #F8F5F0;
+    ---white: #ffffff;
+    ---Background: #0b0b0b;
+    ---black: #1E1E1E;
+    ---border: #e5e5e5;
+}
+
+/*---------------------Roots-----------------*/
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding: 200px 150px;
+
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+}
+
+.hero .container .text h1 {
+    color: var(---yellow);
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'MilligramMarco', sans-serif;
+    line-height: 70px;
+    letter-spacing: -6px;
+}
+
+.hero .container .text h1 span {
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: lowercase;
+    letter-spacing: 20px;
+}
+
+.hero .container .text #heropara {
+    font-size: 16px;
+    color: var(---yellow);
+    line-height: 40px;
+    margin: 20px 0px;
+}
+
+.hero .container .text button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(---yellow);
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.hero .container .text button:hover {
+    animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce2 {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.hero .container .text button img {
+    margin-left: 20px;
+}
+
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    object-fit: cover; 
+}
+
+.video-section {
+    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+
+.video-section #shadow {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* media quries */
+
+@media (max-width:1772px) {
+    section {
+        padding: 20px 100px;
+    }
+
+    .hero {
+        padding: 100px 100px;
+    }
+}
+
+@media (max-width:1674px) {
+    section {
+        padding: 20px 80px;
+    }
+
+    .hero {
+        padding: 100px 80px;
+    }
+
+}
+
+@media (max-width:1590px) {
+    section {
+        padding: 20px 60px;
+    }
+
+    .hero {
+        padding: 100px 60px;
+    }
+}
+
+@media (max-width:1486px) {
+}
+
+@media (max-width:1390px) {
+    section {
+        padding: 20px 40px;
+    }
+
+    .hero {
+        padding: 80px 40px;
+    }
+}
+
+@media (max-width:1280px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width:1080px) {
+    section {
+        padding: 20px 15px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero .container .text h1 {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .hero .container .text h1 span {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width:780px) {}
+
+@media (max-width:690px) {
+    .hero .container .text h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .hero .container .text h1 span {
+        font-size: 30px;
+    }
+
+    .hero .container .text #heropara {
+        font-size: 16px;
+        color: var(---yellow);
+        line-height: 30px;
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width:550px) {}
+
+@media (max-width:500px) {
+    .hero .container .text h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -2px;
+    }
+
+    .hero .container .text h1 span {
+        font-size: 30px;
+        letter-spacing: 10px;
+    }
+
+    .hero .container .text #heropara {
+        font-size: 14px;
+        color: var(---yellow);
+        line-height: 30px;
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width:450px) {
+    .hero .container .text h1 {
+        font-size: 45px;
+        line-height: 40px;
+        letter-spacing: -2px;
+    }
+
+    .hero .container .text {
+        padding-top: 0px;
+    }
+
+    .hero .container .text #heropara {
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+        margin-top: 250px;
+    }
+
+    .hero .container .text button {
+        margin: 0px auto;
+    }
+}
+
+
+@media (max-width:430px) {
+    .hero .container .text h1 {
+        font-size: 38px;
+        line-height: 40px;
+        letter-spacing: -2px;
+    }
+
+    .hero .container .text {
+        padding-top: 0px;
+    }
+
+    .hero .container .text #heropara {
+        font-size: 12px;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+        margin-top: 300px;
+    }
+
+    .hero .container .text button {
+        margin: 0px auto;
+    }
+}
+
+@media (max-width:400px) {
+
+
+    .hero .container .text h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -4px;
+    }
+
+    .hero .container .text h1 span {
+        font-size: 25px;
+    }
+
+    .hero .container .text #heropara {
+        font-size: 10px;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+        margin-top: 300px;
+    }
+
+    .hero .container .text button {
+        margin: 0px auto;
+        font-size: 14px;
+    }
+
+    .hero .container .text button img {
+        margin-left: 8px;
+        width: 15%;
+    }
+}
+
+
+@media (max-width:380px) {
+    .hero {
+        height: 585px;
+    }
+
+    .hero .container .text {
+        padding-top: 0px;
+    }
+
+    .hero .container .text h1 {
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -4px;
+    }
+
+    .hero .container .text h1 span {
+        font-size: 25px;
+    }
+
+    .hero .container .text #heropara {
+        font-size: 11.5px;
+        text-align: center;
+        line-height: 30px;
+        margin: 20px 0px;
+        margin-top: 200px;
+    }
+
+    .hero .container .text button {
+        margin: 0px auto;
+        font-size: 14px;
+    }
+
+    .hero .container .text button img {
+        margin-left: 8px;
+        width: 15%;
+    }
+}
+
+/* media quries */

@@ -1,0 +1,602 @@
+/*---------------------Fonts-----------------*/
+@font-face {
+    font-family: 'Rawest';
+    src: url('Font/Rawest.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MilligramMarco';
+    src: url('Font/Milligram.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*---------------------Fonts-----------------*/
+
+/*---------------------Roots-----------------*/
+
+:root {
+    ---yellow: #F8F5F0;
+    ---white: #ffffff;
+    ---Background: #0b0b0b;
+    ---black: #1E1E1E;
+    ---border: #e5e5e5;
+}
+
+/*---------------------Roots-----------------*/
+
+.about {
+    background-image: url(img/Paper\ background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about #topshadow {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.about .container .image {
+    position: relative;
+}
+
+.about .container .image #bigimage {
+    width: 600px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .container .image #gifvideo {
+    position: absolute;
+    bottom: -20px;
+    right: -275px;
+    border: 5px solid var(---white);
+}
+
+.about .container .image h5 {
+    color: var(---black);
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: 600;
+}
+
+.about .container .image .text {
+    position: absolute;
+    right: -700px;
+    top: 0;
+}
+
+.about .container .image .text .half-color2 {
+    font-size: 120px;
+    font-family: 'MilligramMarco', sans-serif;
+    font-weight: 900;
+    color: var(---black);
+    line-height: 110px;
+    /* Create two layers: top half one color, bottom half another */
+    background: linear-gradient(to left, black 88%, #eae6e1 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .container .image #half-color3 {
+    font-size: 80px;
+    color: var(---black);
+    text-transform: capitalize;
+    font-weight: 400;
+    position: relative;
+    /* Create two layers: top half one color, bottom half another */
+    background: linear-gradient(to bottom, black 60%, #eae6e1 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    display: none;
+}
+
+.about .container .image .text .half-color {
+    font-size: 110px;
+    color: var(---black);
+    text-transform: capitalize;
+    font-weight: 400;
+    position: relative;
+    /* Create two layers: top half one color, bottom half another */
+    background: linear-gradient(to left, black 88%, #eae6e1 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .container .text2 {
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    margin-right: 50px;
+}
+
+.about .container .text2 .data h3 {
+    font-size: 32px;
+    color: var(---black);
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 45px;
+}
+
+.about .container .text2 .data p {
+    color: var(---black);
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.about .container .text2 .data p b {
+    font-family: 'MilligramMarco', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+/* media quries */
+@media (max-width:2570px) {
+
+}
+@media (max-width:1772px) {
+    section {
+        padding: 20px 100px;
+    }
+
+    .about .container .text2 {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:1674px) {
+    section {
+        padding: 20px 80px;
+    }
+
+}
+
+@media (max-width:1590px) {
+    section {
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width:1486px) {
+    .about {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .about .container .text2 .data h3 {
+        font-size: 22px;
+        letter-spacing: 0px;
+        line-height: 30px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 16px;
+        line-height: 35px;
+        margin-top: 10px;
+    }
+
+    .about .container .text2 .data p b {
+        font-size: 20px;
+    }
+
+    .about .container .image #gifvideo {
+        position: absolute;
+        bottom: -20px;
+        right: -200px;
+        border: 5px solid var(---white);
+    }
+
+}
+
+@media (max-width:1366px) {
+    section {
+        padding: 20px 40px;
+    }
+
+    .about .container .image #gifvideo {
+        right: -150px;
+        width: 55%;
+    }
+
+    .about .container .image h5 {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .about .container .image .text {
+        right: -650px;
+        top: 0;
+    }
+}
+
+@media (max-width:1280px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+
+    .about .container .image #gifvideo {
+        right: -110px;
+        width: 55%;
+    }
+}
+
+@media (max-width:1080px) {
+    section {
+        padding: 20px 15px;
+    }
+
+    .about .container .image .text {
+        right: -450px;
+        top: 0;
+    }
+
+    .about .container .image .text .half-color2 {
+        font-size: 80px;
+        font-family: 'MilligramMarco', sans-serif;
+        font-weight: 900;
+        color: var(---black);
+        line-height: 80px;
+    }
+
+    .about .container .image #bigimage {
+        width: 450px;
+        height: 500px;
+    }
+
+    .about .container .text2 .data h3 {
+        font-size: 20px;
+        letter-spacing: 0px;
+        line-height: 30px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 5px;
+    }
+
+    .about .container .text2 .data p b {
+        font-size: 20px;
+    }
+
+    .about .container .image #gifvideo {
+        right: -90px;
+        width: 55%;
+        bottom: 0px;
+    }
+
+    .about .container .image h5 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .about .container .image .text .half-color {
+        font-size: 90px;
+    }
+
+
+}
+
+@media (max-width:920px) {
+    .about .container .image .text {
+        right: -345px;
+        top: 20px;
+    }
+
+    .about .container .image .text .half-color2 {
+        font-size: 60px;
+        font-family: 'MilligramMarco', sans-serif;
+        font-weight: 900;
+        color: var(---black);
+        line-height: 60px;
+    }
+
+    .about .container .image #bigimage {
+        width: 450px;
+        height: 500px;
+    }
+
+    .about .container .text2 .data h3 {
+        font-size: 20px;
+        letter-spacing: 0px;
+        line-height: 20px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 11px;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+
+    .about .container .text2 .data p b {
+        font-size: 16px;
+    }
+
+    .about .container .image #gifvideo {
+        right: -70px;
+        width: 55%;
+        bottom: 0px;
+    }
+
+    .about .container .image h5 {
+        font-size: 16px;
+        padding-top: 0px;
+    }
+
+    .about .container .image .text .half-color {
+        font-size: 60px;
+    }
+
+    .about {
+        padding-bottom: 70px;
+    }
+}
+
+
+@media (max-width:820px) {
+    .about .container .image .text {
+        right: -345px;
+        top: 20px;
+    }
+
+    .about .container .image .text .half-color2 {
+        font-size: 60px;
+        font-family: 'MilligramMarco', sans-serif;
+        font-weight: 900;
+        color: var(---black);
+        line-height: 60px;
+    }
+
+    .about .container .image #bigimage {
+        width: 350px;
+        height: 400px;
+    }
+
+    .about .container .text2 .data h3 {
+        font-size: 18px;
+        letter-spacing: 0px;
+        line-height: 20px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 11px;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+
+    .about .container .text2 .data p b {
+        font-size: 14px;
+    }
+
+    .about .container .image #gifvideo {
+        right: -70px;
+        width: 55%;
+        bottom: 0px;
+    }
+
+    .about .container .image h5 {
+        font-size: 16px;
+        padding-top: 0px;
+    }
+
+    .about .container .image .text .half-color {
+        font-size: 60px;
+    }
+}
+
+@media (max-width:780px) {
+    .about .container .text2 .data h3 {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 20px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 9px;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width:690px) {
+    .about .container {
+        display: block;
+    }
+
+    .about .container .image #bigimage {
+        width: 75%;
+        height: 100%;
+    }
+
+    .about .container .image #gifvideo {
+        top: -30px;
+        right: 0px;
+        width: 40%;
+    }
+
+    .about .container .image .text {
+        position: absolute;
+        right: 10px;
+        top: 250px;
+    }
+
+    .about .container .image .text .half-color {
+        display: none;
+    }
+
+    .about .container .image .text .half-color2 {
+        font-size: 40px;
+        text-align: center;
+        line-height: 40px;
+        /* Create two layers: top half one color, bottom half another */
+        background: linear-gradient(to left, black 50%, #eae6e1 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .about .container .image #half-color3 {
+        display: inherit;
+    }
+
+    .about .container .text2 .data h3 {
+        font-size: 30px;
+        color: var(---black);
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 35px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+
+    .about .container .text2 .data p b {
+        font-family: 'MilligramMarco', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 10px;
+    }
+
+    .about .container .image h5 {
+        display: none;
+    }
+        .about {
+        padding-bottom: 50px;
+    }
+
+}
+
+@media (max-width:550px) {}
+
+@media (max-width:500px) {}
+
+@media (max-width:450px) {
+    .about .container .image .text {
+        position: absolute;
+        right: 0px;
+        top: 200px;
+    }
+
+    .about .container .image .text .half-color2 {
+        font-size: 35px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .about .container .image #gifvideo {
+        top: -50px;
+        right: 0px;
+        width: 40%;
+        border: 3px solid var(---white);
+    }
+
+    .about .container .image #bigimage {
+        margin-left: 20px;
+    }
+
+    .about .container .text2 {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        margin-right: 0px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about .container .image h5 {
+        display: none;
+    }
+
+    .about .container .text2 .data h3 {
+        font-size: 22px;
+        color: var(---black);
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 30px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .about .container .text2 .data p b {
+        font-family: 'MilligramMarco', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+}
+
+@media (max-width:400px) {
+    .about .container .image .text {
+        position: absolute;
+        right: 0px;
+        top: 150px;
+    }
+
+    .about .container .image .text .half-color2 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .about .container .text2 .data p {
+        color: var(---black);
+        font-size: 10px;
+        line-height: 25px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+}
+
+/* media quries */

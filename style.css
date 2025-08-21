@@ -1,0 +1,154 @@
+/*---------------------Fonts-----------------*/
+@font-face {
+    font-family: 'Rawest';
+    src: url('Font/Rawest.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MilligramMarco';
+    src: url('Font/Milligram.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*---------------------Fonts-----------------*/
+
+/*---------------------Roots-----------------*/
+
+:root {
+    ---yellow: #F8F5F0;
+    ---white: #ffffff;
+    ---Background: #0b0b0b;
+    ---black: #1E1E1E;
+    ---border: #e5e5e5;
+}
+
+/*---------------------Roots-----------------*/
+
+/*---------------------Bodys----------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: 'Rawest', sans-serif;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+}
+
+section {
+    padding: 20px 150px;
+    margin-top: 150px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(---Background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(---yellow);
+    height: 200px;
+}
+
+
+.heading {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media quries */
+
+@media (max-width:1772px) {
+    section {
+        padding: 20px 100px;
+    }
+}
+
+@media (max-width:1674px) {
+    section {
+        padding: 20px 80px;
+    }
+
+}
+
+@media (max-width:1590px) {
+    section {
+        padding: 20px 60px;
+    }
+}
+
+@media (max-width:1486px) {
+    section {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:1390px) {
+    section {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width:1280px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width:1080px) {
+    section {
+        padding: 20px 15px;
+        margin-top: 70px;
+    }
+
+}
+
+@media (max-width:780px) {
+    section {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:690px) {}
+
+@media (max-width:550px) {
+    section {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:500px) {}
+
+@media (max-width:450px) {}
+
+@media (max-width:300px) {}
+
+/* media quries */
